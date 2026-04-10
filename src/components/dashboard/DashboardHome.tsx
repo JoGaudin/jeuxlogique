@@ -1,6 +1,6 @@
 "use client";
 
-import { Copy, LayoutGrid, Lightbulb } from "lucide-react";
+import { Copy, LayoutGrid, Lightbulb, History } from "lucide-react";
 import { GameCard } from "@/components/dashboard/GameCard";
 import { useDailyCompletion } from "@/context/DailyCompletionContext";
 
@@ -45,6 +45,13 @@ export function DashboardHome() {
           icon={<Lightbulb className={iconClass} aria-hidden />}
           isCompleted={isCompleted("charade")}
           href="/charade"
+        />
+        <GameCard
+          title="Le mot d'hier"
+          description="Retrouvez le mot de la veille à partir du mot du jour."
+          icon={<History className={iconClass} aria-hidden />}
+          isCompleted={isCompleted("mot-hier")}
+          href="/mot-hier"
         />
       </section>
 

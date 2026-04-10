@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type GameId = "memoire-grille" | "memoire-paires" | "charade";
+export type GameId = "memoire-grille" | "memoire-paires" | "charade" | "mot-hier";
 
 /** Complétion des jeux pour une date donnée (clé = `YYYY-MM-DD`). */
 export type DailyStatusMap = Record<string, Partial<Record<GameId, boolean>>>;

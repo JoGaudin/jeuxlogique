@@ -18,7 +18,13 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Jeux de logique du jour",
   description:
-    "Mémoire en grille, paires à retrouver et charade — défis quotidiens pour tablette.",
+    "Mémoire en grille, paires à retrouver, charade et mot d'hier — défis quotidiens pour tablette.",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/pwa-logo.svg",
+  },
 };
 
 export default function RootLayout({
