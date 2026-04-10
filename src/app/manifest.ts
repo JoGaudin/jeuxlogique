@@ -15,7 +15,13 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/pwa-logo.svg",
         sizes: "any",
         type: "image/svg+xml",
-        purpose: "any maskable",
+        purpose: "any",
+      },
+      {
+        src: "/pwa-logo.svg",
+        sizes: "any",
+        type: "image/svg+xml",
+        purpose: "maskable",
       },
     ],
   };
